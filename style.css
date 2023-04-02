@@ -112,6 +112,11 @@ body {
     transform: scale(1);
 }
 
+.note .details {
+    max-height: 165px;
+    overflow-y: auto;
+}
+
 .settings .menu li {
     height: 25px;
     width: 120px;
@@ -128,6 +133,7 @@ body {
 .menu li i {
     padding-right: 8px;
     padding: 5px;
+    cursor: pointer;
 }
 
 .popup-box {
