@@ -7,7 +7,7 @@ const descTag = document.querySelector("textarea")
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-
+const notes = JSON.parse(localStorage.getItem("notes") || "[]")
 addBox.addEventListener("click", () => {
     popupBox.classList.add("show")
 })
@@ -15,6 +15,15 @@ addBox.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
     popupBox.classList.remove("show")
 })
+
+
+function showNotes () {
+        notes.foreach((note) => {
+
+        })
+}
+showNotes();
+
 
 addButton.addEventListener("click", e => {
     e.preventDefault();
@@ -33,11 +42,11 @@ addButton.addEventListener("click", e => {
             description: noteDesc,
             date: `${day} ${month} ${year}`
         }
-        console.log(noteInfo)
-        noteDesc.push(noteInfo) // adding new note to notes
+        console.log(noteInfo);
+        notes.push(noteInfo); // adding new note to notes
         // saving notes to local storage
-        localStorage.setItem("notes",notes)
-
+        localStorage.setItem("notes",JSON.stringify(notes));
+        closeIcon.click();
     }
 
     
