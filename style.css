@@ -84,7 +84,7 @@ body {
     font-size: 14px;
 }
 
-.bottom-content .settings i {
+.bottom-content .settings .uil-ellipsis-h {
     color: #6d6d6d;
     font-size: 15px;
     cursor: pointer;
@@ -107,7 +107,7 @@ body {
     transition: transform 0.2s ease-in-out;
 }
 
-.settings:hover .menu {
+.settings.show .menu {
     transform: scale(1);
 }
 
@@ -134,7 +134,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
     background: rgba(0,0,0,0.4);
 }
 
@@ -142,7 +142,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 3;
+    z-index: 5;
     max-width: 400px;
     width: 100%;
     justify-content: center;
