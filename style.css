@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
-    
 }
-
 body {
     background: #88ABFF;
 }
-
 .wrapper {
     margin: 50px;
     display: grid;
@@ -37,7 +33,6 @@ body {
     flex-direction: column;
     cursor: pointer;
 }
-
 .add-box .icon{
     height: 78px;
     width: 78px;
@@ -48,32 +43,27 @@ body {
     justify-content: center;
     margin-bottom: 10px;
 }
-
 .add-box p {
     font-size: 14px;
     color: #88ABFF;
     font-weight: 500;
     margin-top: 10px;
 }
-
 .wrapper .note {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .note p {
     font-weight: 500;
     font-size: 22px;
 }
-
 .note span {
     display: block;
     margin-top: 5px;
     font-size: 16px;
     color: #575757;
 }
-
 .note .bottom-content {
     padding-top: 10px;
     border-top: 1px solid #ccc;
@@ -83,7 +73,6 @@ body {
     color: #6d6d6d;
     font-size: 14px;
 }
-
 .bottom-content .settings .uil-ellipsis-h {
     color: #6d6d6d;
     font-size: 15px;
@@ -93,7 +82,6 @@ body {
 .settings {
     position: relative;
 }
-
 .settings .menu {
     position: absolute;
     bottom: 0;
@@ -116,7 +104,6 @@ body {
     max-height: 165px;
     overflow-y: auto;
 }
-
 .settings .menu li {
     height: 25px;
     width: 120px;
