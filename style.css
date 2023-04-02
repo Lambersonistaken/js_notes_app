@@ -6,4 +6,45 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+    font-weight: 500;
+}
+
+body {
+    background: #88ABFF;
+}
+
+.wrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,265px);
+    gap: 15px;
+}
+.wrapper li {
+    height: 250px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px 20px 20px;
+}
+
+.add-box, .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add-box .icon{
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px dashed #88ABFF;
+    color: #88ABFF;
+    margin-bottom: 10px;
+}
+
+.add-box p {
+    font-size: 14px;
+    color: #88ABFF;
+    font-weight: 600;
+    margin-top: 10px;
 }
