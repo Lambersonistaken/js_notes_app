@@ -19,7 +19,22 @@ closeIcon.addEventListener("click", () => {
 
 function showNotes () {
         notes.foreach((note) => {
-
+            let liTag = `<li class="note">
+            <div class="details">
+                <p>${note}</p>
+                <span>Lorem ipsum dolor sit amet consectetur, adipis veniet itaque eius dicta harum quia.</span>
+            </div>
+            <div class="bottom-content">
+                <span>April 7, 2023</span>
+                <div class="settings">
+                    <i class="uil uil-ellipsis-h"></i>
+                    <ul class="menu">
+                        <li><i class="uil uil-pen">Edit</i></li>
+                        <li><i class="uil uil-trash">Delete</i></li>
+                    </ul>
+                </div>
+            </div>
+        </li>`
         })
 }
 showNotes();
