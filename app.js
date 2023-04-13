@@ -66,6 +66,7 @@ function deleteNote (noteId) {
     if(!confirmDel) return;
     notes.splice(noteId,1) // removing selected node from array/tasks
     // saving update notes to localstorage
+    localStorage.setItem("notes",JSON.stringify(notes));
     showNotes();
 }
 
@@ -95,7 +96,7 @@ addButton.addEventListener("click", e => {
             notes[updateId] = noteInfo; // updating specified note
         }
         console.log(noteInfo);
-        notes.push(noteInfo); // adding new note to notes
+        //notes.push(noteInfo); // adding new note to notes
         // saving notes to local storage
         localStorage.setItem("notes",JSON.stringify(notes));
         closeIcon.click();
