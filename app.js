@@ -66,7 +66,6 @@ function deleteNote (noteId) {
     if(!confirmDel) return;
     notes.splice(noteId,1) // removing selected node from array/tasks
     // saving update notes to localstorage
-    localStorage.setItem("notes",JSON.stringify(notes));
     showNotes();
 }
 
